@@ -2,3 +2,58 @@
     margin: 0;
     padding: 0;
 }
+.menu{
+font-size: 0;
+}
+.menu-item{
+display: inline-block;
+border-bottom: 3px solid rgb(193, 164, 206);
+}
+.menu-item-link{
+color: white;
+background: rgb(37, 182, 182);
+text-transform: uppercase;
+text-decoration: none;
+display: block;
+padding: 10px 15px;
+font-size: 17px;
+}
+.menu-item-link:hover{
+    background: rgb(193, 164, 206);
+    color: rgb(206, 28, 87);
+}
+.menu-inner{
+position: absolute;
+display: none;
+width: 221px;
+}
+.menu-inner .menu-item{
+ display: block;
+ border: 1px solid rgb(192, 177, 206);
+}
+.menu-item:hover .menu-inner{
+    display: block;
+}
+.menu-inner .menu-item-link{
+    text-transform: none;
+    background: rgb(193, 164, 206);
+    color: rgb(206, 28, 87);
+}
+.menu-inner .menu-item:hover .menu-inner-inner{
+display: block;
+}
+.menu-inner-inner{
+   width: 221px;
+    position: absolute;
+    right: -220px;
+   bottom: -42px;
+    display: none;
+}
+.menu-inner .menu-item-link:after{
+content: '+';
+color:  rgb(206, 28, 87);
+margin-left: 110px;
+}
+.menu-inner-inner .menu-item-link:after{
+   content: none; 
+}
